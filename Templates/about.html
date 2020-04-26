@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content%}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='about.css') }}">
+<div class="about-section">
+    <h1>Sobre Nosotros</h1>
+    <h5>Nuestro Socio Fundador, Marcelo Huaca, cuenta con más de 10 años de experiencia y ha desarrollado su carrera profesional como abogado en diferentes sectores y países, destacando su formación internacional y combinación de la profesión de abogado con el desarrollo y gestión de diferentes empresas.</h5>
+  
+  </div>
+  <h2 style="text-align:center"></h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src=" {{ url_for('static', filename ='images/Contratacion-publica.png') }} " alt="Jane" style="width:100%">
+        <div class="container">
+          <h1>JM Abogados</h1>
+          <h4 class="title">Abogados a su Servicio</h4>
+          <h5>La calidad en el servicio, la cercana relación con el cliente, así como nuestra experiencia e ímpetu, hacen de JM Abogados una firma de confianza a la hora de buscar un socio estratégico para su negocio.</h5>
+          <h5>gerencia@abogadosjm.com</h5>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <iframe width="100%" height="550" src="https://www.youtube.com/embed/2yVYKK2AKIU?autoplay=1">
+        </iframe>
+        
+        <div class="container">
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+
+

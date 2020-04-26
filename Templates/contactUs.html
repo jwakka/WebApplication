@@ -1,0 +1,66 @@
+
+{% extends "layout.html" %}
+{% block content%}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='contactUs.css') }}">
+
+ 
+  {% if success %}
+  <h1>Contactos</h1>
+  <h3>Gracias por su mensaje. Nos pondremos en contacto con usted en breve.</h3>
+ 
+  {% else %}
+  <h2>Ponte en contacto con nosotros</h2>
+ 
+    {% for message in form.name.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+ 
+    {% for message in form.email.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+ 
+    {% for message in form.subject.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+ 
+    {% for message in form.message.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+ 
+    <form action="{{ url_for('contactUs') }}" method=post>
+      {{ form.hidden_tag() }}
+ 
+      {{ form.name.label }}
+      {{ form.name }}
+ 
+      {{ form.email.label }}
+      {{ form.email }}
+ 
+      {{ form.subject.label }}
+      {{ form.subject }}
+ 
+      {{ form.message.label }}
+      {{ form.message }}
+ 
+      {{ form.submit }}
+    </form>
+    <h2>Localizado en:</h2>
+
+    <div class= "card" >
+      
+      <div class="mapouter">
+        <div class="gmap_canvas">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2821.1752496889094!2d-78.11612894273145!3d0.34900967044483694!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2a3cb5f5e0c0c3%3A0x31b0947e81b3af73!2sPedro%20Moncayo%20200-330%2C%20Ibarra!5e0!3m2!1ses!2sec!4v1587530647308!5m2!1ses!2sec" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    <style>.mapouter{position:relative;height:399;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:399;width:100%;}
+    </style>
+
+    </div>
+ 
+  {% endif %}
+    
+        
+
+
+{% endblock content %}
+

@@ -1,0 +1,27 @@
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #4d8ac7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #c9c6c6d0; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #6d7074; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #5a5c5f; /* White */
+    color: #fffdfd;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
