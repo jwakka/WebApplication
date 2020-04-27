@@ -5,18 +5,22 @@
       <h1 class="margin">¿Quienes somos nosotros?</h1>
       <img src=" {{ url_for('static', filename ='images/JMlogo.png') }} " style="display:inline" alt="Logo" width="350" height="350">
       <h2>Somos JM Abogados</h2>
+      <p>Somos una firma de profesionales en derecho con maestrías en: Contratación
+        Pública, Derecho Administrativa, Aduanas, Derecho Penal, Derecho Tributario,
+        Derecho Constitucional, que brindamos Patrocinio Jurídico en sede administrativa
+        y jurisdiccional con eficiencia, eficacia, ética y responsabilidad.</p>
     </div>
-    <!-- Second Container -->
     <div class="container-fluid bg-2 text-center">
-      <h1 class="margin">¿Quiénes somos y a qué nos dedicamos? </h1>
+      <h1 class="margin">¿A qué nos dedicamos? </h1>
       <img src=" {{ url_for('static', filename ='images/arbitraje.jpg') }} " style="display:inline" alt="Logo">
-      <p>-Nos ponemos en sus zapatos, escuchamos sus inquietudes, comprendemos lo que necesita. </p>
-      <p>-Defensa eficaz de los derechos y garantías individuales y corporativos</p>
-      <p>-Stricto apego a la ley, valores y sobre todo a la ética</p>
+      <ul style="list-style-type:none;">
+        <li>I.  Nos ponemos en sus zapatos, escuchamos sus inquietudes, comprendemos lo que necesita. </li>
+        <li>II.  Defensa eficaz de los derechos y garantías individuales y corporativos</li>
+        <li>III.  Stricto apego a la ley, valores y sobre todo a la ética</li>
+      </ul>
     </div>
-    <!-- Third Container (Grid) -->
     <div class="container-fluid bg-3 text-center">    
-      <h1 class="margin">Nuestros servicios incluyen </h1><br>
+      <h1 class="margin">Nuestros servicios incluyen: </h1><br>
       <div class="row">
         <div class="col-sm-4">
           <ul style="list-style-type:square;">
@@ -30,8 +34,6 @@
             <li>CONTRATACIÓN PÚBLICA</li>
             <li>DERECHO ADMINISTRATIVO & CONSTITUCIONAL</li>
           </ul>
-
-          
           <img src=" {{ url_for('static', filename ='images/gavel1.png') }} "  style="width:80%" alt="Image">
         </div>
         <div class="col-sm-4"> 
