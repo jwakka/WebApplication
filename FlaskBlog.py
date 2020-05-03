@@ -14,8 +14,8 @@ app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
 app.config["MAIL_USE_SSL"] = True
 app.config['MAIL_USE_TLS'] = False
-app.config["MAIL_USERNAME"] = 'juanhuaca91@gmail.com'
-app.config["MAIL_PASSWORD"] = 'zhzrqrfpdwbrkxvi'
+app.config["MAIL_USERNAME"] = 'example@gmail.com'
+app.config["MAIL_PASSWORD"] = '**********'
 
 
 mail.init_app(app)
@@ -38,7 +38,7 @@ def contactUs():
         if form.validate() == False:
             return render_template('contactUs.html', form=form)
         else:
-            msg = Message(form.subject.data, sender='juanhuaca91@gmail.com', recipients=['ecabogadosjm@gmail.com'])
+            msg = Message(form.subject.data, sender='example@gmail.com', recipients=['recipientemail@gmail.com'])
             msg.body= """
             From: %s &;%s&gt;
             %s
